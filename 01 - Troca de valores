@@ -1,0 +1,12 @@
+# Aqui jás as variavéis
+A = 10
+B = 20
+
+# Troca-troca 😈
+troca = A
+A = B
+B = troca
+
+# Printada
+print("Valor de A:", A)
+print("Valor de B:", B)
