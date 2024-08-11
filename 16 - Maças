@@ -1,0 +1,14 @@
+# Input
+numero_macas = int(input("Digite o número de maçãs compradas: "))
+
+# Bitree
+if numero_macas < 12:
+    preco_unitario = 1.30
+else:
+    preco_unitario = 1.00
+
+# Calc
+custo_total = numero_macas * preco_unitario
+
+# Print
+print("O custo total da compra é: R$ {:.2f}".format(custo_total))
