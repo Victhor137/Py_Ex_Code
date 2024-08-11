@@ -1,0 +1,12 @@
+# Passo 1: Ler a hora de início e a hora de fim do jogo
+hora_inicio = int(input("Digite a hora de início (em horas inteiras): "))
+hora_fim = int(input("Digite a hora de fim (em horas inteiras): "))
+
+# Passo 2: Calcular a duração do jogo
+if hora_fim >= hora_inicio:
+    duracao = hora_fim - hora_inicio
+else:
+    duracao = (24 - hora_inicio) + hora_fim
+
+# Passo 3: Exibir a duração do jogo
+print("A duração do jogo foi de {} horas.".format(duracao))
