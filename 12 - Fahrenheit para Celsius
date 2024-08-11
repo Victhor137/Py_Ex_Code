@@ -1,0 +1,8 @@
+# Input
+fahrenheit = float(input("Digite a temperatura em graus Fahrenheit: "))
+
+# Calc
+celsius = (5 / 9) * (fahrenheit - 32)
+
+# Print
+print("A temperatura em graus Celsius é: {:.2f}".format(celsius))
