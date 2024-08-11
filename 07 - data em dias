@@ -1,0 +1,13 @@
+# Input
+anos = int(input("Digite a idade em anos: "))
+meses = int(input("Digite a idade em meses: "))
+dias = int(input("Digite a idade em dias: "))
+
+# Calc
+dias_por_ano = 365
+dias_por_mes = 30
+
+total_dias = (anos * dias_por_ano) + (meses * dias_por_mes) + dias
+
+# Printada
+print("A idade expressa apenas em dias é:", total_dias)
