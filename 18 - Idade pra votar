@@ -1,0 +1,15 @@
+# Passo 1: Ler o ano atual e o ano de nascimento
+ano_atual = int(input("Digite o ano atual: "))
+ano_nascimento = int(input("Digite o ano de nascimento: "))
+
+# Passo 2: Calcular a idade da pessoa
+idade = ano_atual - ano_nascimento
+
+# Passo 3: Verificar se a pessoa pode votar
+if idade >= 16:
+    mensagem = "Você pode votar este ano."
+else:
+    mensagem = "Você não pode votar este ano."
+
+# Passo 4: Escrever a mensagem
+print(mensagem)
