@@ -1,0 +1,12 @@
+# Passo 1: Ler os dois valores
+valor1 = float(input("Digite o primeiro valor: "))
+valor2 = float(input("Digite o segundo valor: "))
+
+# Passo 2: Determinar o maior valor
+if valor1 > valor2:
+    maior = valor1
+else:
+    maior = valor2
+
+# Passo 3: Escrever o maior valor
+print("O maior valor é: {:.2f}".format(maior))
