@@ -1,0 +1,9 @@
+# Passo 1: Ler os dois valores
+valor1 = float(input("Digite o primeiro valor: "))
+valor2 = float(input("Digite o segundo valor: "))
+
+# Passo 2: Determinar a ordem crescente
+if valor1 < valor2:
+    print("Valores em ordem crescente: {:.2f}, {:.2f}".format(valor1, valor2))
+else:
+    print("Valores em ordem crescente: {:.2f}, {:.2f}".format(valor2, valor1))
