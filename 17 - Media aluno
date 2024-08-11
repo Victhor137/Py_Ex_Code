@@ -1,0 +1,16 @@
+# Passo 1: Ler as notas das duas avaliações
+nota1 = float(input("Digite a nota da 1ª avaliação: "))
+nota2 = float(input("Digite a nota da 2ª avaliação: "))
+
+# Passo 2: Calcular a média aritmética simples
+media = (nota1 + nota2) / 2
+
+# Passo 3: Determinar se o aluno foi aprovado
+if media >= 6:
+    status = "Aprovado"
+else:
+    status = "Reprovado"
+
+# Passo 4: Escrever a mensagem e a média calculada
+print("Média calculada: {:.2f}".format(media))
+print("O aluno foi:", status)
