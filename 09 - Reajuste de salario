@@ -1,0 +1,10 @@
+# Input
+salario_atual = float(input("Salário mensal: "))
+percentual_reajuste = float(input("Reajuste (em %): "))
+
+# Calc
+valor_reajuste = (percentual_reajuste / 100) * salario_atual
+novo_salario = salario_atual + valor_reajuste
+
+# Printada
+print("O novo salário do funcionário é: R$ {:.2f}".format(novo_salario))
