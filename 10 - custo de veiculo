@@ -1,0 +1,14 @@
+# Input
+custo_fabrica = float(input("Digite o custo de fábrica do carro: "))
+
+# Fix
+percentual_distribuidor = 28  # em porcentagem
+percentual_impostos = 45  # em porcentagem
+
+# Calc
+valor_distribuidor = (percentual_distribuidor / 100) * custo_fabrica
+valor_impostos = (percentual_impostos / 100) * custo_fabrica
+custo_final = custo_fabrica + valor_distribuidor + valor_impostos
+
+# Passo 5: Exibir o custo final ao consumidor
+print("O custo final ao consumidor é: R$ {:.2f}".format(custo_final))
