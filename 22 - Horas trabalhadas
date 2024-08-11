@@ -1,0 +1,21 @@
+# Passo 1: Ler o número de horas trabalhadas no mês e o valor da hora regular
+horas_trabalhadas = float(input("Digite o número de horas trabalhadas no mês: "))
+valor_hora = float(input("Digite o valor da hora regular: "))
+
+# Passo 2: Calcular o total de horas regulares e horas extras
+horas_regulares_mensal = 40 * 4  # 4 semanas no mês
+if horas_trabalhadas > horas_regulares_mensal:
+    horas_extras = horas_trabalhadas - horas_regulares_mensal
+else:
+    horas_extras = 0
+
+# Cálculo do salário
+salario_regular = horas_regulares_mensal * valor_hora
+valor_hora_extra = valor_hora * 1.5  # Valor da hora extra com acréscimo de 50%
+salario_extra = horas_extras * valor_hora_extra
+
+# Salário total
+salario_total = salario_regular + salario_extra
+
+# Passo 3: Exibir o salário total
+print("O salário total do funcionário é: R$ {:.2f}".format(salario_total))
