@@ -1,0 +1,8 @@
+# Legenda 🎥
+valor = int(input("Digite um valor: "))
+
+# Kalkulo
+antecessor = valor - 1
+
+# Printada
+print("O antecessor de", valor, "é", antecessor)
