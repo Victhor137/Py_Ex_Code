@@ -1,0 +1,9 @@
+# Dimensões
+base = float(input("Digite a base do retângulo: "))
+altura = float(input("Digite a altura do retângulo: "))
+
+# Kalkulo
+area = base * altura
+
+# Printada
+print("A área do retângulo é:", area)
