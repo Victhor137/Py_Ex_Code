@@ -1,0 +1,8 @@
+y = int(input("Digite um valor maior que zero: "))
+while y<=0:
+    y = int(input("Digite um novo valor maior que zero: "))
+x = y
+li = y*10
+while x <= li:
+    print(x)
+    x = x + y*1
