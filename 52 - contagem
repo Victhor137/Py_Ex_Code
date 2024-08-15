@@ -1,0 +1,4 @@
+x = 101
+while x<=110:
+    print(x)
+    x = x+1
