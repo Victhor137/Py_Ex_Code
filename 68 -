@@ -1,0 +1,23 @@
+# Criando a lista para armazenar as frutas
+frutas_matriz = []
+
+# Lê o total de itens no estoque
+estoque = int(input("Digite o total do estoque: "))
+
+# Adiciona as informações no banco de dados
+for i in range(estoque):
+    nome = input("Digite o nome da fruta: ")
+    quantidades = int(input(f"Digite a quantidade de {nome} em estoque: "))
+    valor = float(input(f"Digite o valor de {nome}: "))  # Usar float para valores monetários
+    media = valor / quantidades
+    frutas = {
+        'nome': nome,
+        'quantidade': quantidades,
+        'valor': valor,
+        'media': media,
+    }
+    frutas_matriz.append(frutas)
+
+# Imprime as informações das frutas
+for fruta in frutas_matriz:
+    print(f"Fruta: {fruta['nome']}, Quantidade: {fruta['quantidade']}, Valor: {fruta['valor']:.2f}, Média: {fruta['media']:.2f}")
