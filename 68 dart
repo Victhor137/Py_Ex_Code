@@ -1,0 +1,35 @@
+import 'dart:io';
+
+void main() {
+  List<String> frutas = ['Uva','Pera'];
+  
+  print("--- * ESTOQUE * ---");
+  stdout.write('''
+              Digite:
+               (1) Para consultar o estoque
+               (2) Para alterar o estoque
+               ''');
+  String? menu = stdin.readLineSync();
+  if (menu == '1') {
+    print('$frutas');
+  }
+} if else (menu == '2') {
+  stdout.write('''
+                Digite:
+                 (1) Para adicionar uma nova fruta
+                 (2) Para alterar uma fruta do estoque''' 
+  }
+  if (menu == '1') {
+    stdout.write('Digite o nome da fruta')
+    String? nova_fruta = stdin.readLineSync();
+    
+
+    
+  }
+
+
+
+
+
+
+}
