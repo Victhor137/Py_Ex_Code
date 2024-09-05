@@ -9,15 +9,15 @@ def adicionar_produto():
   try:
     preco = float(entry_valor.get())
   except ValueError:
-    messagebox.showerror("Erro, o valor deve ser um número.")
+    messagebox.showerror("ERRO", "O valor deve ser um número.")
     return
 
   estoque.append(produto)
   valor.append(preco)
-  messagebox.showinfo("Sucesso, produto adicionado com sucesso!")
+  messagebox.showinfo("SUCESSO", "Produto adicionado com sucesso!")
 
   entry_produto.delete(0, tk.END)
-  entry_produto.delete(0, tk.END)
+  entry_valor.delete(0, tk.END)
 
 #def para listar produto no estoque
 def listar_produto():
@@ -35,9 +35,9 @@ def remover_produto():
     index = estoque.index(produto)
     estoque.pop(index)
     valor.pop(index)
-    messagebox.showinfo("Sucesso!",f"O produto '{produto}' foi removido com sucesso!")
+    messagebox.showinfo("SUCESSO!",f"O produto '{produto}' foi removido com sucesso!")
   else:
-    messagebox.showerror("Erro", "Produto não encontrado.")
+    messagebox.showerror("ERRO", "Produto não encontrado.\n Adicione o nome do produto e tente novamente.")
   entry_produto.delete(0, tk.END)
 
 #def para criar a interface gráfica
